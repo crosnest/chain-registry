@@ -12,3 +12,5 @@ jobs:
     steps:
       - name: Sync Fork with Upstream
         run: gh repo sync $GITHUB_REPOSITORY -b $GITHUB_REF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

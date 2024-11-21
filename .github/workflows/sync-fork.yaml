@@ -2,13 +2,13 @@ name: Trigger sync Workflow
 on:
 push:
 branches:
-— main
+- main
 
 jobs:
 call-workflow:
 runs-on: ubuntu-latest
 steps:
-— name: Call reusable workflow in workflows
+- name: Call reusable workflow in workflows
 uses: crosnest/workflows/blob/main/.github/workflows/chain-registry_sync.yml@main
 with:
 message: “Triggered from chain-registry”

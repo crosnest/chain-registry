@@ -1,16 +1,16 @@
-name: Trigger sync Workflow
+name: Trigger Sync Workflow
 on:
   schedule:
-    - cron: '0 * * * *'
-push:
-branches:
-- main
+    - cron: '0 * * * *' # Runs at the top of every hour
+  push:
+    branches:
+      - main # Trigger on pushes to the main branch
 
 jobs:
-call-workflow:
-runs-on: ubuntu-latest
-steps:
-- name: Call reusable workflow in workflows
-uses: crosnest/workflows/blob/main/.github/workflows/chain-registry_sync.yml@main
-with:
-message: “Triggered from chain-registry”
+  call-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call reusable workflow
+        uses: crosnest/workflows/.github/workflows/chain-registry_sync.yml@main # Correct `uses` format
+        with: # Pass any required inputs here (defined in the reusable workflow)
+          message: "Triggered from chain-registry"

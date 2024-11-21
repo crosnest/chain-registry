@@ -1,5 +1,7 @@
 name: Trigger sync Workflow
 on:
+  schedule:
+    - cron: '0 * * * *'
 push:
 branches:
 - main

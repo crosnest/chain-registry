@@ -8,9 +8,6 @@ on:
 
 jobs:
   call-workflow:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Call reusable workflow
-        uses: crosnest/workflows/.github/workflows/chain-registry_sync.yml@main # Correct `uses` format
-        with: # Pass any required inputs here (defined in the reusable workflow)
-          message: "Triggered from chain-registry"
+    uses: crosnest/workflows/.github/workflows/chain-registry_sync.yml@main # Reference the reusable workflow
+    with: # Pass inputs to the reusable workflow
+      message: "Triggered from chain-registry"

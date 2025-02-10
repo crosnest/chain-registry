@@ -7,7 +7,7 @@
   "status": "live",
   "network_type": "mainnet",
   "bech32_prefix": "nillion",
-  "daemon_name": "nilliond",
+  "daemon_name": "nilchaind",
   "node_home": "$HOME/.nillionapp",
   "website": "https://nillion.com/",
   "key_algos": [

@@ -1,0 +1,104 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "nillion",
+  "chain_type": "cosmos",
+  "chain_id": "nillion-1",
+  "pretty_name": "Nillion",
+  "status": "live",
+  "network_type": "mainnet",
+  "bech32_prefix": "nillion",
+  "daemon_name": "nilliond",
+  "node_home": "$HOME/.nillionapp",
+  "website": "https://nillion.com/",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "unil",
+        "fixed_min_gas_price": 0.02,
+        "low_gas_price": 0.02,
+        "average_gas_price": 0.03,
+        "high_gas_price": 0.06
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "unil"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/NillionNetwork/nilchain",
+    "recommended_version": "v0.2.5",
+    "compatible_versions": [
+      "v0.2.5"
+    ],
+    "consensus": {
+      "type": "cometbft",
+      "version": "v0.38.12",
+      "tag": "v0.38.12"
+    },
+    "binaries": {
+    },
+    "genesis": {
+      "genesis_url": "https://dl-eu.cros-nest.com/genesis.json"
+    },
+    "sdk": {
+      "type": "cosmos",
+      "version": "v0.50.11",
+      "tag": "v0.50.11"
+    },
+    "ibc": {
+      "type": "go",
+      "version": "v8.2.1"
+    }
+  },
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.png",
+    "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kyve/images/kyve.svg"
+  },
+  "description": "Revolutionizing data reliability in the Web3 space, KYVE Network provides fast and easy tooling for data validation, immutability, and retrieval, ensuring trustless data for seamless scalability and eliminating data risks and roadblocks.",
+  "peers": {
+    "seeds": [
+      {
+        "id": "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0",
+        "address": "seeds.polkachu.com:28156",
+        "provider": "Polkachu"
+      },
+      {
+        "id": "ff5d57b8e9b99cb8105ea21ef2264bd737401a82",
+        "address": "185.182.194.186:26656",
+        "provider": ""
+      },
+      {
+        "id": "c06d93fb95cfbbe69bffea605661e8cc53d15733",
+        "address": "38.242.150.63:26766",
+        "provider": ""
+      },
+      {
+        "id": "20e1000e88125698264454a884812746c2eb4807",
+        "address": "seeds.lavenderfive.com:28156",
+        "provider": "Lavender"
+      }
+    ],
+    "persistent_peers": [
+    ]
+  },
+  "apis": {
+    "rpc": [
+    ],
+    "rest": [
+    ],
+    "grpc": [
+    ]
+  },
+  "explorers": [
+  ],
+  "images": [
+  ]
+}
